@@ -4,9 +4,12 @@
 <title>Home</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<style>
-</style>
-<script src=""></script>
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script src="scripts/main.js"></script>
 
 <header class="header">
     <customH1 style='text-align: center;'><u>Qualifications</u></customH1> <!-- WIP -->
@@ -56,9 +59,12 @@
 
                 if (setClasses) {
                     this.classList.toggle("active");
-                    this.nextElementSibling.classList.toggle("show");
+                    var contentsElem = this.querySelector('.block-contents') || this.nextElementSibling;
+                    if (contentsElem) {
+                        contentsElem.classList.toggle("show");
+                    }
                 }
-            }
+            };
         }
 
         function setClass(els, className, fnName) {
