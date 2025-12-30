@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Home</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - David Dowd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <script src="scripts/main.js"></script>
 
-<header class="header">
-    <customH1 style='text-align: center;'><u>Qualifications</u></customH1> <!-- WIP -->
-    <!-- Maybe add previous projects (e.g. Dabble, since I stored the web material for that) -->
-</header>
+<body>  
+    <nav> <!-- Global Navigation Bar -->
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Dabble_Archive/Dabble.html">Dabble (2020)</a></li>
+            <li><a href="Dabble_Updated/Dabble.html">Dabble (2025)</a></li>
+            <li><a href="https://github.com/Raszhagal/Python-Image-Morpher/">Python Image Morpher</a></li>
+            <li><a href="https://github.com/Raszhagal/">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/davidmilesdowd">LinkedIn</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Dabble_Archive/Dabble.html">Dabble (2020)</a></li>
+            <li class="hideOnMobile"><a href="Dabble_Updated/Dabble.html">Dabble (2025)</a></li>
+            <li class="hideOnMobile"><a href="https://github.com/Raszhagal/Python-Image-Morpher/">Python Image Morpher</a></li>
+            <li class="hideOnMobile"><a href="https://github.com/Raszhagal/">GitHub</a></li>
+            <li class="hideOnMobile"><a href="https://www.linkedin.com/in/davidmilesdowd">LinkedIn</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
 
-<body>
-<div class="focusParent">
-    <div style="float: left; width: 20%; margin-right: 5%;" class="accordion">
-        <div class="block">
-            <div class="block-label">About</div>
-            <div class="block-contents"><p> Purdue 2020 Graduate in Computer Engineering; Programmer; Nerd. Database IT Lead for Molina Healthcare through Infosys Ltd. An enthusiast for optimization in all things programming.</p></div>
-        </div>
-        <br>
-        <div class="block">
-            <div class="block-label">Contact</div>
-            <div class="block-contents"><p>Please reverse the email address (to prevent scraping):<br><br>David Dowd<br>moc.liamg@79dwodd</p></div>
-        </div>
-        <br>
-        <div class="block">
-            <div class="block-label">Projects</div>
-            <div class="block-contents">
-                <div> 
-                    <a href="Dabble/Dabble.html">
-                        <button class="accordion" style="background-color: burlywood !important;"><p style='text-align: center; color: black !important;'>Dabble</p></button>
+    <header class="header">
+        <customH1 style='text-align: center;'><u>Website Under Construction</u></customH1> <!-- WIP -->
+        <!-- Maybe add previous projects (e.g. Dabble, since I stored the web material for that) -->
+    </header>
+    <div class="focusParent">
+        <div style="float: left; width: 20%; margin-right: 5%;" class="accordion">
+            <div class="block">
+                <div class="block-label">About</div>
+                <div class="block-contents"><p> Purdue 2020 Graduate in Computer Engineering; Programmer; Nerd. Database IT Lead for Molina Healthcare through Infosys Ltd. An enthusiast for optimization in all things programming.</p></div>
+            </div>
+            <br>
+            <div class="block">
+                <div class="block-label">Contact</div>
+                <div class="block-contents"><p>Please reverse the email address (to prevent scraping):<br><br>David Dowd<br>moc.liamg@79dwodd</p></div>
+            </div>
+            <br>
+            <div class="block">
+                <div class="block-label">Projects</div>
+                <div class="block-contents">
+                    <div> 
+                        <a href="Dabble_Archive/Dabble.html">
+                            <button class="accordion" style="background-color: burlywood !important;"><p style='text-align: center; color: black !important;'>Dabble (2020 Archive Copy)</p></button>
+                        </a>
+                        <!--img src="Dabble.jpg" style="height: 100%;"-->
+                        <a href="Dabble_Updated/Dabble.html">
+                            <button class="accordion" style="background-color: burlywood !important;"><p style='text-align: center; color: black !important;'>Dabble (2025 Version)</p></button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Raszhagal/Python-Image-Morpher/" target="_blank">
+                        <button class="accordion" style="background-color: steelblue !important;"><p style='text-align: center;'>Python Image Morpher</p></button>
                     </a>
-                    <!--img src="Dabble.jpg" style="height: 100%;"-->
-                </div>
-                <div>
-                    <a href="https://github.com/Raszhagal/Python-Image-Morpher/" target="_blank">
-                    <button class="accordion" style="background-color: steelblue !important;"><p style='text-align: center;'>Python Image Morpher</p></button>
-                </a>
-                <!--img src="PIM.png" style="height: 100%;"-->
+                    <!--img src="PIM.png" style="height: 100%;"-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        var acc = document.getElementsByClassName("block");
-        var block = document.getElementsByClassName('block-contents');
+        <script>
+            var acc = document.getElementsByClassName("block");
+            var block = document.getElementsByClassName('block-contents');
 
-        for (var i = 0; i < acc.length; i++) {
-            acc[i].onclick = function() {
-                var setClasses = !this.classList.contains('active');
-                setClass(acc, 'active', 'remove');
-                setClass(block, 'show', 'remove');
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                    var setClasses = !this.classList.contains('active');
+                    setClass(acc, 'active', 'remove');
+                    setClass(block, 'show', 'remove');
 
-                if (setClasses) {
-                    this.classList.toggle("active");
-                    var contentsElem = this.querySelector('.block-contents') || this.nextElementSibling;
-                    if (contentsElem) {
-                        contentsElem.classList.toggle("show");
+                    if (setClasses) {
+                        this.classList.toggle("active");
+                        var contentsElem = this.querySelector('.block-contents') || this.nextElementSibling;
+                        if (contentsElem) {
+                            contentsElem.classList.toggle("show");
+                        }
                     }
-                }
-            };
-        }
-
-        function setClass(els, className, fnName) {
-            for (var i = 0; i < els.length; i++) {
-                els[i].classList[fnName](className);
+                };
             }
-        }
-    </script>
 
-    <div>
-    <p style='text-align: center;'>Hello World.</p><br>
-    <p style='text-align: center;'>Welcome to my.. <i>fancy</i>.. website. As you can see, I haven't gotten around to finishing it yet... TBD.</p>
-    <p style='text-align: center;'>In the meantime, please take a look at my latest project, below, which has recently been updated to v2.0.</p><br>
-    <a href="https://github.com/Raszhagal/Python-Image-Morpher/" target="_blank"><img class="center media" src="githubBanner.png" style="width: 80%;"></a><br>
-    <p style='text-align: center;'>If you like what you see, feel free to contact me on <a href="https://www.linkedin.com/in/davidmilesdowd" target="_blank">LinkedIn</a>.</p><br>
+            function setClass(els, className, fnName) {
+                for (var i = 0; i < els.length; i++) {
+                    els[i].classList[fnName](className);
+                }
+            }
+        </script>
+
+        <div>
+        <p style='text-align: center;'>Hello World.</p><br>
+        <p style='text-align: center;'>Welcome to my.. <i>fancy</i>.. website. As you can see, I haven't gotten around to finishing it yet... TBD.</p>
+        <p style='text-align: center;'>In the meantime, please take a look at my latest project, below, which has recently been updated to v2.0.</p><br>
+        <a href="https://github.com/Raszhagal/Python-Image-Morpher/" target="_blank"><img class="center media" src="githubBanner.png" style="width: 80%;"></a><br>
+        <p style='text-align: center;'>If you like what you see, feel free to contact me on <a href="https://www.linkedin.com/in/davidmilesdowd" target="_blank">LinkedIn</a>.</p><br>
+        </div>
     </div>
-</div>
 
 </body>
 <footer class="footer">
