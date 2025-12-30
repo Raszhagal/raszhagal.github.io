@@ -1,3 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: lightgrey;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.229);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
 customH1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30pt;
@@ -26,7 +93,6 @@ button:hover {
 }
 
 .accordion {
-    font-family: 'Times New Roman', Times, serif;
     width: 100%;
     outline: none;
     margin-top: 5px;
@@ -91,8 +157,14 @@ button:hover {
     margin-top: 12%;
 }
 
-body {
-    background-color: #111
+html, body {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111;
+    overflow-y: hidden;
 }
 
 p {
@@ -158,10 +230,27 @@ a:active {
 /* Optional theme */
 @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
 
+/* removed page margin so background fills viewport; spacing should use padding where needed */
 body {
-    margin: 10px;
+    margin: 0;
 }
 
 .panel-group {
   cursor: pointer;
+}
+
+@media(max-width: 1250px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
 }
